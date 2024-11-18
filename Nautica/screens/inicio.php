@@ -33,7 +33,7 @@
                             class="no-underline font-medium px-10 py-2 hover:bg-white text-black duration-300 rounded-full">Conductores</a>
                     </li>
                     <li class="list-none inline-block px-8">
-                        <a href="registro.php"
+                        <a href="historialViajes.php"
                             class="no-underline font-medium px-10 py-2 hover:bg-white text-black duration-300 rounded-full">Viajes</a>
                     </li>
                     <li class="list-none inline-block px-8">
