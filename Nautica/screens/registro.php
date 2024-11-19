@@ -60,7 +60,7 @@
                 <!-- FECHA -->
                 <div class="mb-4">
                     <span class="mb-1 text-sm">Fecha:</span>
-                    <input type="text"
+                    <input type="date"
                         class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
                         name="fecha" id="fecha" required placeholder="ejemplo: 20-07-2024" />
                 </div>
