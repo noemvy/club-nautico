@@ -1,6 +1,17 @@
 <?php
 include "../conexion/bdnautica.php";
 
+// Consulta SELECT para obtener las matriculas de los barcos
+$sql = "SELECT matricula FROM barco";
+$stmt = $pdo->query($sql);
+$matriculaBarco = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+// Consulta SELECT para obtener los codigos de los patrones
+$sql = "SELECT codigo FROM conductor_patron";
+$stmt = $pdo->query($sql);
+$codigoPatron = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Captura los datos enviados por el formulario

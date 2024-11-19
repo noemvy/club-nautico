@@ -12,48 +12,36 @@
 </head>
 
 <body>
-    <div class="relative min-h-screen bg-[url('../img/portada.jpg')] bg-center bg-cover px-8 py-8">
+    <div class="relative min-h-screen bg-[url('../img/bg.jpg')] bg-center bg-cover px-8 py-8">
         <!-- Capa de sombreado -->
         <div class="absolute inset-0 bg-black bg-opacity-20"></div>
 
         <!-- Contenido -->
-        <nav class="relative z-10 flex items-center">
-            <div class="flex-1 text-white text-4xl font-semibold" style="font-family: 'Poppins', sans-serif;">
+        <nav class="relative z-10 flex justify-center mt-12">
+            <div class="text-white text-6xl font-semibold" style="font-family: 'Poppins', sans-serif;">
                 CLUB NAUTICO
-            </div>
-            <div
-                class="flex-1 text-center border-2 border-white rounded-full mx-auto px-10 py-2 bg-white   hover:border-transparent hover:text-black duration-300">
-                <ul class="flex justify-center">
-                    <li class="list-none inline-block px-8">
-                        <a href="inicio.php"
-                            class="no-underline font-medium px-10 py-2 hover:bg-white text-black duration-300 rounded-full">Inicio</a>
-                    </li>
-                    <li class="list-none inline-block px-8">
-                        <a href="conductores.php"
-                            class="no-underline font-medium px-10 py-2 hover:bg-white text-black duration-300 rounded-full">Conductores</a>
-                    </li>
-                    <li class="list-none inline-block px-8">
-                        <a href="historialViajes.php"
-                            class="no-underline font-medium px-10 py-2 hover:bg-white text-black duration-300 rounded-full">Viajes</a>
-                    </li>
-                    <li class="list-none inline-block px-8">
-                        <a href="contacto.php"
-                            class="no-underline font-medium px-10 py-2 hover:bg-white text-black duration-300 rounded-full">Contáctanos</a>
-                    </li>
-                </ul>
             </div>
         </nav>
 
-        <div class="relative z-10 text-white mt-36 max-w-xl">
+        <div class="relative z-10 text-white mt-12 text-center max-w-3xl mx-auto">
             <h1 class="text-6xl font-semibold leading-normal">Tu aventura en el mar, planificada al detalle.</h1>
             <strong class="text-xl">Agenda tu próxima travesía en barco, ¡el mar te espera!</strong>
         </div>
-        <br>
-        <div class="relative">
-            <a href="registro.php"
-                class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border-transparent">Agendar
+
+        <!-- Menú de botones debajo del título -->
+        <div class="relative z-10 flex justify-center mt-12 space-x-4">
+            <a href="../screens/registro.php"
+                class="block px-6 py-3 bg-black text-white rounded-lg hover:bg-opacity-70 duration-300 hover:text-yellow-300 border-2 border-transparent hover:border-yellow-300">Agendar
                 Viaje</a>
+            <a href="../screens/conductores.php"
+                class="block px-6 py-3 bg-black text-white rounded-lg hover:bg-opacity-70 duration-300 hover:text-yellow-300 border-2 border-transparent hover:border-yellow-300">Conductores</a>
+            <a href="../screens/historialViajes.php"
+                class="block px-6 py-3 bg-black text-white rounded-lg hover:bg-opacity-70 duration-300 hover:text-yellow-300 border-2 border-transparent hover:border-yellow-300">
+                Historial Viajes</a>
         </div>
+
+        <br>
+    </div>
     </div>
 </body>
 
